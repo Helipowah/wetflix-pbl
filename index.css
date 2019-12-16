@@ -1,22 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+/*@media screen and (min-width: 500px)
+{*/
+    .fixed {
+        top: 0;
+        z-index: 100;
+        position: fixed;
+        width: 100%;
+    }
+/*}*/
+
 body {
-    margin: 0px;
+    margin: 0;
 }
 
-#header {
-    width: 100%;
-    background: cadetblue;
-    float: left;
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#headerContent {
-    text-align: left;
-    padding-left: 1rem;
+/* Header and Title - Mobile */
+
+.header {
+    background-color: cadetblue;
     color: white;
-    font-size: 2rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
 }
 
-/* HEADER NAV BAR */
+h1.title {
+    padding-left: 15px;
+    font-size: 150%;
+}
+
+/* Header and Title - Mobile */
+
+/* Header and Title - Desktop */
+
+@media screen and (min-width: 500px)
+{
+    .header {
+        background-color: cadetblue;
+        color: white;
+        padding: 15px;
+        overflow: hidden;
+        padding: 0;
+        width: 100%;
+    }
+
+    h1.title {
+        padding-left: 15px;
+        font-size: 200%;
+    }
+}
+
+/* Header and Title - Desktop */
+
+/* Nav Bar - Mobile */
+
+#menu {
+    width: 100%;
+    height: 100%;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -25,25 +74,66 @@ ul {
     background-color: teal;
 }
 
-li {
-    float: left;
-}
-
 li a {
+    float: left;
     display: block;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 10px 16px;
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-li.right {
-    float: right;
+    font-size: 80%;
 }
 
 li a:hover {
     background-color: darkcyan;
 }
 
-/* NAV BAR END YES*/
+/* Nav Bar - Mobile */
+
+/* Nav Bar - Desktop */
+
+@media screen and (min-width: 500px)
+{
+
+    #menu {
+        width: 100%;
+        height: 100%;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: teal;
+    }
+
+    li a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 16px;
+        text-decoration: none;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 100%;
+    }
+
+    li.right a {
+        float: right;
+    }
+
+    li a:hover {
+        background-color: darkcyan;
+    }
+}
+
+main {
+    overflow: hidden;
+}
+
+.fixed + main {
+    padding-top: 10px;
+}
+/* Nav Bar - Desktop */
