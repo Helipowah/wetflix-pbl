@@ -1,4 +1,3 @@
-# wetflix-pbl
-Speedrun time
+# Project Responsive Wetflix
 
-[REDACTED]
+A test website for a showcase focusing on using ASP.NET/Spring and Web Development interactivity.
