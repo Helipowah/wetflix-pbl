@@ -1,11 +1,49 @@
+body {
+    margin: 0px;
+}
 
+#header {
+    width: 100%;
+    background: cadetblue;
+    float: left;
+}
 
-.headings {
-    width: 100em;
-    height: 1.70rem;
-    background: cyan;
-    text-align: center;
+#headerContent {
+    text-align: left;
+    padding-left: 1rem;
     color: white;
-    font-size: 1.65rem;
+    font-size: 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* HEADER NAV BAR */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: teal;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li.right {
+    float: right;
+}
+
+li a:hover {
+    background-color: darkcyan;
+}
+
+/* NAV BAR END YES*/
