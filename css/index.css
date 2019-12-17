@@ -63,7 +63,6 @@ h1.title {
 
 #menu {
     width: 100%;
-    height: 100%;
 }
 
 ul {
@@ -98,7 +97,6 @@ li a:hover {
 
     #menu {
         width: 100%;
-        height: 100%;
     }
 
     ul {
@@ -133,9 +131,21 @@ main {
     overflow: hidden;
 }
 
+/* PADDING */
+
 .fixed + main {
-    padding-top: 10px;
+    padding-top: 35px;
 }
+
+@media screen and (min-width: 500px)
+{
+    .fixed + main {
+        padding-top: 39px;
+    }
+}
+
+/* PADDING */
+
 /* Nav Bar - Desktop */
 
 /* Body */
