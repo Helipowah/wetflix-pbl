@@ -166,3 +166,26 @@ p.text {
     font-size: 1.25em;
     margin: 1.5em;
 }
+
+/* IMAGE SECTION */
+
+p.block {
+    display: inline-block;
+    margin: 0px;
+}
+
+p.namehead {
+    font-size: 1.5em;
+    margin: 0px;
+}
+
+img {
+    width: 45%;
+    height: 45%;
+    max-width: 160px;
+    max-height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    padding-right: 20px;
+}
