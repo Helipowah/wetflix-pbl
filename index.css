@@ -137,3 +137,32 @@ main {
     padding-top: 10px;
 }
 /* Nav Bar - Desktop */
+
+/* Body */
+
+body {
+    background-color: #f3f3f3f1;
+}
+
+main {
+    background-color: #e2e2e2f3;
+    margin-top: 10px;
+}
+
+h2.article {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+p.intro {
+    font-size: 1.4em;
+    text-align: center;
+    padding: 0px;
+}
+
+p.text {
+    text-align: justify;
+    font-size: 1.25em;
+    margin: 1.5em;
+}
